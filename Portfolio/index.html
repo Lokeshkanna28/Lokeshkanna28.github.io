@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://use.fortawesome.com/kits/1ce05b4b/publications/124411/woff2.css" media="all">
 </head>
 <body>
     <!---Section 1--->
+    <section id="home">
     <div class="hero">
+        <div class="Menu">
         <nav>
             <h2 class="logo">Portfo<span>lio</span></h2>
             <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Experiences</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><i class="fa fa-home"></i><a href="#home">&nbsp;Home</a></li>
+            <li><i class="fa-solid fa-id-badge"></i><a href="#About">&nbsp;About Me</a></li>
+            <li><i class="fa-solid fa-ranking-star"></i><a href="#Experience">&nbsp;Experiences</a></li>
+            <li><i class="fa-solid fa-list-check"></i><a href="#Skills">&nbsp;Skills</a></li>
+            <li><i class="fa-sharp fa-regular fa-address-card"></i>&nbsp;<a href="#contact">Contact</a></li>
             </ul>
-            <a href="#" class="btn">Subscribe</a>
         </nav>
+        </div>
         <div class="content">
             <h4>Hello, my name is</h4>
-            <h1>Lokesh <span> Kanna.</span></h1>
+            <h1>Lokesh<span> Kanna</span>.</h1>
             <h3>I'm a Salesforce Developer.</h3>
             </div>
         </div>  
     </div>
-
+    </section>
     <!--About Section-->
     <section class = "about">
+        <section id="About">
         <div class="main">
             <div class="about-text">
                 <h2>About me</h2>
@@ -42,18 +48,22 @@
                     <br>
                     <br>
                     I am a highly motivated and results-oriented individual with a passion for technology. I am always looking for new challenges and opportunities to learn and grow.
-                    I am committed to working with my team to improve our team's KPIs by staying up-to-date on the latest Salesforce technologies and features. This includes using productivity tools like Workbench and Salesforce Inspector, as well as staying informed about new Salesforce releases.
+                    I am committed to working with my team and staying up-to-date on the latest Salesforce technologies and features. This includes using productivity tools like Workbench and Salesforce Inspector, as well as staying informed about new Salesforce releases.
                 </p>
-                <button type="button">Let's Talk</a></button>
+                <form action="/Resume.pdf" download method="get" target="_blank">
+                    
+                    <button type="submit"><i class="fa fa-folder"></i>&nbsp;Download Resume</button>
+                 </form>
             </div>
         </div>
     </section>
-
-    <!--Experince Section-->
+    <section id="Experience">
+    <div class="title">
+        <h2>My Experiences</h2>
+    </div>
+    <!--Experience Section-->
     <div class="Experience">
-        <div class="title">
-            <h2>My Experiences</h2>
-        </div>
+        <br>
         <div class ="box">
             <div class ="card">
                 <style>
@@ -71,34 +81,63 @@
                 <div class="Pra">
                 <p><span>✨Manage Salesforce users and permissions.</span>
                     <br>
-                    Creating and deleting user accounts, assigning roles and profiles, and managing sharing rules.</span>
+                    Created and deleted user accounts, assigned roles and profiles, and managed sharing rules.<br>
                     <span>✨Maintain Salesforce data.</span>
                     <br>
-                    This includes importing and exporting data, cleaning up data, and performing backups.
+                    Performed importing and exporting data using SQL with Workbench, cleaning up data, performing backups and License Management.<br>
                     <span>✨Configure Salesforce settings.</p></span>
-                    This includes setting up email notifications, configuring reports and dashboards, and creating custom fields.
-                    <br>
-                    <span>✨Develop and implement Salesforce solutions.</span>
-                    This includes creating custom objects, fields, and workflows, as well as integrating Salesforce with other systems.
-                    </p>            
+                    This inetting up email notifications, configuring reports and dashboards, and creating custom fields.
+                </p>          
                 <p style="text-align:center">
                 </div>
             </div>
             <div class ="card">
-                <i class="fa-solid fa-bell"></i>
-                <h5>Apex Programming</h5>
+                <i class="fa-brands fa-salesforce"></i>
+                <h5>Customizing Salesforce functionalities</h5>
                 <div class="Pra">
-                <p>Worked with Apex Classes, Created Workflows, Triggers and customised lighting components.</p>            
-                </div>
+                    <p><span>✨Solving user requests.</span>
+                        <br>
+                        Completed more than 500 user stories and requests including creating custom fields and objects, workflows, triggers and apex classes.<br>
+                        <span>✨Customizing Salesforce UI.</span>
+                        <br>
+                        Worked with different Salesforce orgs within STRYKER each requiring varied Salesforce UI including page layouts, list views, and Object/field changes.<br>
+                        <span>✨Configured lightning components </p></span>
+                        Deployed visual force pages which utilizes lwc and apex classes for creating custom tabs.
+                        </p>            
+                    <p style="text-align:center">
+                    </div>
             </div>
             <div class ="card">
-                <i class="fa-solid fa-bell"></i>
-                <h5>Apex Programming</h5>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h5>Code Deployments and Debugging</h5>
                 <div class="Pra">
-                <p>Worked with Apex Classes, Created Workflows, Triggers and customised lighting components.</p>            
+                    <p><span>✨Azure Devops.</span>
+                        <br>
+                        Worked with Azure Repos for deploying code Changes, used Azure pipelines and Test Plans for effective Testing and debugging. Used GIT for version control.<br>
+                        <span>✨User debugging.</span>
+                        <br>
+                        Analysed debug logs to identify issues caused due to integrations with Middleware and Oracle Systems.<br>
+                        <span>✨Configured lightning components </p></span>
+                        Deployed visual force pages which utilizes lwc and apex classes for creating custom tabs.
+                        </p>            
+                    <p style="text-align:center">            
                 </div>
             </div>
         </div>
     </div>
+    </section>
+    <section id = "contact">
+    <div class="Contact">
+        <div class = "Heading">  
+            <h2>Contact</h2>
+        </div>
+        <div class = "Links">    
+            <a href="https://www.linkedin.com/in/lokeshkanna/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Lokeshkanna28"><i class="fa-brands fa-square-github"></i></a>
+            <a href="mailto:lokesh.kanna.tech@gmail.com"><i class="fa-solid fa-square-envelope"></i></i></a>
+
+        </div>
+    </div>
+    </section>
 </body>
 </html>

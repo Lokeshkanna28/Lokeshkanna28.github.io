@@ -9,7 +9,7 @@
     width: 100%;
     background-image: url("bg3.svg");
     background-size: cover;
-    background-position: center;
+    background-position: flex-center;
 }
 nav{
     display: flex;
@@ -25,8 +25,13 @@ nav{
     letter-spacing: 1px;
     cursor: pointer;
 }
+.hero i{
+    color: white;
+}
 .material-symbols-outlined{
-    padding-top: 3px;
+    cursor: none;
+    padding-top: 7.5px;
+    bottom: 30px;
     transform: scale(2.5);
     align-items: vertical;
     translate: center;
@@ -112,14 +117,6 @@ h4{
     padding: 100px 0px;
     background-color: #101010;
 }
-.mailing{
-    width: 1130px;
-    max-width: 0 auto;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 .about h2{
     color: white;
     font-size: 75px;
@@ -139,6 +136,10 @@ h4{
     font-size: 18px;
     margin-bottom: 45px;  
 }
+.about-text a{
+    color: white;
+    text-decoration:none;
+}
 button{
     background-color:#f9004d;
     color: white;
@@ -149,6 +150,9 @@ button{
     border-radius:30px;
     transition: .4s;
 }
+button:fa-duotone fa-download{
+    font-size: 20px;
+}
 button:hover{
     background-color: transparent;
     border: 2px solid #f9004d;
@@ -157,46 +161,68 @@ button:hover{
 .Experience{
     background: #101010;
     width: 100%;
-    padding-left: 5%;
     padding-top: 5%;
-    align-items: horizontal center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transform: translate(x,y);
 }
-.title h2{
+.title{
+    background-color: #101010;
     color: white;
     font-size: 75px;
-    width: 1130px;
-    margin: 30px auto;
     text-align: center;
 }
 .box{
     display: flex;
-    justify-content: horizontally;
-    align-items: horizontal;
+    align-items: center;
     min-height: 400px;
     color: white;
 }
 .card{
-    height: 520px;
-    width: 400px;
-    padding: 20px 35px;
+    height: 460px;
+    width: 440px;
+    overflow: hidden;
     background: #191919;
     border-radius: 20px;
     margin: 15px;
-    position: relative;
-    overflow: hidden;
     text-align: center;
     justify-content: vertical;
     align-items: center;
+    translate: X,Y;
 }
 .card i{
     font-size: 50px;
     display: block;
     text-align: center;
     margin: 25px 0px;
-    color: #f9004d
+    color: #f9004d;
 }
 h5{
     color: white;
     font-size: 23px;
     margin-bottom: 15px;
+}
+.Contact{
+    padding-top: 5%;
+    margin-bottom: 25px;
+    text-decoration: none !important;
+}
+.Heading h2{
+    text-align: center;
+    justify-content: vertical;
+    align-items: center;
+}
+.Links{
+    text-decoration: none;
+    font-size: 50px;;
+    color: #f9004d;
+    text-align: center;
+    justify-content: horizontal;
+    align-items: center;   
+
+}
+.Links i{
+    text-decoration: none;
+    color: #f9004d;
 }
